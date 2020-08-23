@@ -23,7 +23,7 @@ app.use('/repositories/:id', validateRepositoryId);
 
 const repositories = [];
 
-app.get('/repositories', (request, response) => {});
+app.get('/repositories', (request, response) => response.json(repositories));
 
 app.post('/repositories', (request, response) => {});
 
