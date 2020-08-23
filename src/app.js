@@ -78,7 +78,7 @@ app.post('/repositories/:id/like', (request, response) => {
 
   const repository = repositories.find((repo) => repo.id === id);
 
-  repository.likes = repository.likes + 1;
+  repository.likes++;
 
   return response.json({ likes: repository.likes });
 });
